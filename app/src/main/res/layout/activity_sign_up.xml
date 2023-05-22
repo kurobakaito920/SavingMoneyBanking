@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background"
+    tools:context=".ui.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txtLogo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/imgLogo"
+            android:text="QUẢN LÝ SỔ TIẾT KIỆM"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/edtEmailRes"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Nhập email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="30dp" />
+
+        <ImageView
+            android:id="@+id/ic_email_res"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_email" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/edtAccountRes"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Nhập tài khoản"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp" />
+
+        <ImageView
+            android:id="@+id/ic_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_user" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/edtPassRes"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp" />
+
+        <ImageView
+            android:id="@+id/ic_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_pass" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtPassConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp" />
+
+        <ImageView
+            android:id="@+id/ic_lock_Res"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_pass" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/ckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý với "
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tempsAndService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.5dp"
+            android:layout_toRightOf="@+id/ckBox"
+            android:text="Điều khoản \u0026 Dịch vụ"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_color"
+        android:text="Đăng ký" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã có tài khoản? Vui lòng đăng nhập "
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt"
+            android:text="TẠI ĐÂY"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/spending_management"
+        android:title="@string/spending_management"
+        android:icon="@drawable/ic_sp"/>
+    <item
+        android:id="@+id/exchange_rate"
+        android:title="@string/exchange_rate"
+        android:icon="@drawable/ic_balance"
+        />
+    <item
+        android:id="@+id/setting"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_setting"/>
+</menu>

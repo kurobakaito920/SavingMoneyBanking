@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddMoneyActivity">
+
+    <TextView
+        android:id="@+id/tvSoDu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:text="Số dư : "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvHienSoDu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="696.966 VND"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tvSoDu"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvNap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nạp tiền"
+        android:layout_below="@id/tvSoDu"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtNap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền cần nạp"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/tvNap"
+        android:layout_marginTop="32dp"
+        android:textSize="23dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerAccount"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/edtNap"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/btnNap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nạp tiền"
+        android:textSize="22dp"
+        android:layout_below="@+id/spinnerAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+    <TextView
+        android:id="@+id/tvTienDaNap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Số tiền đã nạp: "
+        android:layout_below="@+id/btnNap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/tvTienNap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:text="0 VND"
+        android:layout_toRightOf="@id/tvTienDaNap"
+        android:layout_below="@+id/btnNap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>
